@@ -13,7 +13,7 @@ pipeline {
         }
         stage('production'){
             steps{
-                sh 'echo "Good Bye World"
+                sh 'echo "Good Bye World"'
             }
         }
     }
