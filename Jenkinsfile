@@ -1,5 +1,4 @@
 pipeline {
-    gatlingArchive()
     agent any
     stages {
         stage('build') {
