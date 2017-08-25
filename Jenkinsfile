@@ -16,6 +16,7 @@ pipeline {
         stage('production'){
             steps{
                 sh '''
+                git checkout master
                 git add -all
                 git commit -S -m "Added results" -a
                 git push origin master
