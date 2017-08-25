@@ -1,0 +1,5 @@
+RUN	computerdatabase.TestSimulation	testsimulation	testsimulation	1503672249110	 	2.0
+USER	BasicSimulation	1	START	1503672250402	1503672250402
+REQUEST	BasicSimulation	1		request_1	1503672250437	1503672250687	OK	 
+REQUEST	BasicSimulation	1		request_1 Redirect 1	1503672250726	1503672250853	OK	 
+USER	BasicSimulation	1	END	1503672250402	1503672255880

@@ -1,0 +1,10 @@
+{
+  "simulation": "computerdatabase.SSOSimulation",
+  "simulationId": "ssosimulation",
+  "start": 1503681423576,
+  "description": "",
+  "scenarios": ["Users"],
+  "assertions": [
+
+  ]
+}

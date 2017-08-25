@@ -1,9 +1,12 @@
 pipeline {
+    gatlingArchive()
     agent any
     stages {
         stage('build') {
             steps {
-                sh 'echo "Hello World"'
+                sh '''
+                  ./Gatling/bin/gatling.sh -s TestSimulation
+                '''
             }
         }
         stage('test'){
