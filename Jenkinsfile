@@ -15,7 +15,7 @@ pipeline {
         }
         stage('production'){
             steps{
-                sh 'echo "Good Bye World"'
+                sh 'git push origin master'
             }
         }
     }
