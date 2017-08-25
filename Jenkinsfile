@@ -15,7 +15,11 @@ pipeline {
         }
         stage('production'){
             steps{
-                sh 'git push origin master'
+                sh '''
+                git add -all
+                git commit -S -m "Added results" -a
+                git push origin master
+                '''
             }
         }
     }
