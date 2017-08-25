@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                  ./Gatling/bin/gatling.sh -s TestSimulation
+                  ./Gatling/bin/gatling.sh -s computerdatabase.TestSimulation
                 '''
             }
         }
