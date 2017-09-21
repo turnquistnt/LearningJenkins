@@ -16,7 +16,7 @@ pipeline {
         stage('production'){
             steps{
                 sh '''
-                  python3 api-key-grab.json
+                  python api-key-grab.json
                 '''
             }
         }
