@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 sh '''
-                  ./Gatling/bin/gatling.sh -s computerdatabase.TestSimulation
+
                 '''
             }
         }
@@ -16,10 +16,8 @@ pipeline {
         stage('production'){
             steps{
                 sh '''
-                git checkout master
-                git add --all
-                git commit -S -m "Added results" -a
-                git push origin master
+                 def json = readJSON file:'test-stuff.json'
+                 echo "size: ${json.size}"
                 '''
             }
         }
