@@ -15,8 +15,8 @@ pipeline {
         }
         stage('production'){
             steps{
+                def json = readJSON file:'test-stuff.json'
                 sh '''
-                 def json = readJSON file:'test-stuff.json'
                  echo "size: ${json.size}"
                 '''
             }
