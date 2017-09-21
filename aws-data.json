@@ -1,0 +1,15 @@
+{
+    "items": [
+        {
+            "name": "single-sign-on-service-dev",
+            "enabled": true,
+            "value": "kn8d05GUkM7yBxrsaSW1h1ek5YuRslWyawpuEZo4",
+            "stageKeys": [
+                "h9lurtec4c/dev"
+            ],
+            "lastUpdatedDate": 1504187677,
+            "createdDate": 1504187677,
+            "id": "7r8als52r7"
+        }
+    ]
+}

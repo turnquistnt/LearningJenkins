@@ -15,9 +15,8 @@ pipeline {
         }
         stage('production'){
             steps{
-                def json = readJSON file:'test-stuff.json'
                 sh '''
-                 echo "size: ${json.size}"
+                  python3 api-key-grab.json
                 '''
             }
         }
